@@ -1,0 +1,82 @@
+('world', 'sports', 'business', 'science') -> 0.4843
+('world', 'sports', 'business', 'technology') -> 0.5030
+('world', 'sports', 'business', 'computers') -> 0.4950
+('world', 'sports', 'economy', 'science') -> 0.4650
+('world', 'sports', 'economy', 'technology') -> 0.5427
+('world', 'sports', 'economy', 'computers') -> 0.5430
+('world', 'sports', 'markets', 'science') -> 0.5212
+('world', 'sports', 'markets', 'technology') -> 0.5900
+('world', 'sports', 'markets', 'computers') -> 0.5907
+('world', 'sports', 'financial', 'science') -> 0.5275
+('world', 'sports', 'financial', 'technology') -> 0.5927
+('world', 'sports', 'financial', 'computers') -> 0.5955
+('world', 'sport', 'business', 'science') -> 0.4205
+('world', 'sport', 'business', 'technology') -> 0.4565
+('world', 'sport', 'business', 'computers') -> 0.4405
+('world', 'sport', 'economy', 'science') -> 0.3625
+('world', 'sport', 'economy', 'technology') -> 0.4870
+('world', 'sport', 'economy', 'computers') -> 0.4582
+('world', 'sport', 'markets', 'science') -> 0.4017
+('world', 'sport', 'markets', 'technology') -> 0.5160
+('world', 'sport', 'markets', 'computers') -> 0.4883
+('world', 'sport', 'financial', 'science') -> 0.4228
+('world', 'sport', 'financial', 'technology') -> 0.5285
+('world', 'sport', 'financial', 'computers') -> 0.5045
+('international', 'sports', 'business', 'science') -> 0.4427
+('international', 'sports', 'business', 'technology') -> 0.4670
+('international', 'sports', 'business', 'computers') -> 0.4617
+('international', 'sports', 'economy', 'science') -> 0.4098
+('international', 'sports', 'economy', 'technology') -> 0.4990
+('international', 'sports', 'economy', 'computers') -> 0.4845
+('international', 'sports', 'markets', 'science') -> 0.4345
+('international', 'sports', 'markets', 'technology') -> 0.5210
+('international', 'sports', 'markets', 'computers') -> 0.5060
+('international', 'sports', 'financial', 'science') -> 0.4487
+('international', 'sports', 'financial', 'technology') -> 0.5272
+('international', 'sports', 'financial', 'computers') -> 0.5158
+('international', 'sport', 'business', 'science') -> 0.4562
+('international', 'sport', 'business', 'technology') -> 0.4903
+('international', 'sport', 'business', 'computers') -> 0.4778
+('international', 'sport', 'economy', 'science') -> 0.4143
+('international', 'sport', 'economy', 'technology') -> 0.5130
+('international', 'sport', 'economy', 'computers') -> 0.4880
+('international', 'sport', 'markets', 'science') -> 0.4348
+('international', 'sport', 'markets', 'technology') -> 0.5315
+('international', 'sport', 'markets', 'computers') -> 0.5070
+('international', 'sport', 'financial', 'science') -> 0.4432
+('international', 'sport', 'financial', 'technology') -> 0.5345
+('international', 'sport', 'financial', 'computers') -> 0.5120
+('politics', 'sports', 'business', 'science') -> 0.6030
+('politics', 'sports', 'business', 'technology') -> 0.6110
+('politics', 'sports', 'business', 'computers') -> 0.6138
+('politics', 'sports', 'economy', 'science') -> 0.5857
+('politics', 'sports', 'economy', 'technology') -> 0.6512
+('politics', 'sports', 'economy', 'computers') -> 0.6680
+('politics', 'sports', 'markets', 'science') -> 0.6395
+('politics', 'sports', 'markets', 'technology') -> 0.7030
+('politics', 'sports', 'markets', 'computers') -> 0.7163
+('politics', 'sports', 'financial', 'science') -> 0.6570
+('politics', 'sports', 'financial', 'technology') -> 0.7093
+('politics', 'sports', 'financial', 'computers') -> 0.7278
+('politics', 'sport', 'business', 'science') -> 0.5010
+('politics', 'sport', 'business', 'technology') -> 0.5375
+('politics', 'sport', 'business', 'computers') -> 0.5228
+('politics', 'sport', 'economy', 'science') -> 0.4465
+('politics', 'sport', 'economy', 'technology') -> 0.5735
+('politics', 'sport', 'economy', 'computers') -> 0.5493
+('politics', 'sport', 'markets', 'science') -> 0.4850
+('politics', 'sport', 'markets', 'technology') -> 0.6022
+('politics', 'sport', 'markets', 'computers') -> 0.5795
+('politics', 'sport', 'financial', 'science') -> 0.5102
+('politics', 'sport', 'financial', 'technology') -> 0.6182
+('politics', 'sport', 'financial', 'computers') -> 0.6000
+{
+  "selected": {
+    "World": "politics",
+    "Sports": "sports",
+    "Business": "financial",
+    "Sci/Tech": "computers"
+  },
+  "screening_accuracy": 0.72775,
+  "full_validation_accuracy": 0.7320833333333333
+}

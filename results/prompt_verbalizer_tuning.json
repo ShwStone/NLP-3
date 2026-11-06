@@ -1,0 +1,686 @@
+{
+  "selection_data": "validation split only; screening on first 4,000 examples, then full 12,000-example validation check",
+  "screening_size": 4000,
+  "candidates": {
+    "World": [
+      "world",
+      "international",
+      "politics"
+    ],
+    "Sports": [
+      "sports",
+      "sport"
+    ],
+    "Business": [
+      "business",
+      "economy",
+      "markets",
+      "financial"
+    ],
+    "Sci/Tech": [
+      "science",
+      "technology",
+      "computers"
+    ]
+  },
+  "num_combinations": 72,
+  "results_sorted": [
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.72775
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.71625
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.70925
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.703
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.668
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.657
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.65125
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.6395
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.61825
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.61375
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.611
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.603
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.60225
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.6
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.5955
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.59275
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.59075
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.59
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.58575
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.5795
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.5735
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.54925
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.543
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.54275
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.5375
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.5345
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.5315
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.5285
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.5275
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.52725
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.52275
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.52125
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.521
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.516
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.51575
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.513
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.512
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.51025
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.507
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.506
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.5045
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.503
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.501
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.499
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.495
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.49025
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.48825
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.488
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.487
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.485
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.4845
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.48425
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.47775
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.467
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.465
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.46175
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.45825
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "technology"
+      },
+      "screening_accuracy": 0.4565
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.45625
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "financial",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.44875
+    },
+    {
+      "verbalizers": {
+        "World": "politics",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.4465
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.44325
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "business",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.44275
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "computers"
+      },
+      "screening_accuracy": 0.4405
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.43475
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "markets",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.4345
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "financial",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.42275
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "business",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.4205
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.41425
+    },
+    {
+      "verbalizers": {
+        "World": "international",
+        "Sports": "sports",
+        "Business": "economy",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.40975
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "markets",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.40175
+    },
+    {
+      "verbalizers": {
+        "World": "world",
+        "Sports": "sport",
+        "Business": "economy",
+        "Sci/Tech": "science"
+      },
+      "screening_accuracy": 0.3625
+    }
+  ],
+  "selected": {
+    "World": "politics",
+    "Sports": "sports",
+    "Business": "financial",
+    "Sci/Tech": "computers"
+  },
+  "selected_screening_accuracy": 0.72775,
+  "selected_full_validation_accuracy": 0.7320833333333333,
+  "test_set_used": false
+}

@@ -1,0 +1,202 @@
+{
+  "World": [
+    {
+      "feature": "( canadian",
+      "score": 8.32839
+    },
+    {
+      "feature": "arafat",
+      "score": 8.31166
+    },
+    {
+      "feature": "hamas",
+      "score": 8.30592
+    },
+    {
+      "feature": "gaza",
+      "score": 8.28804
+    },
+    {
+      "feature": "militants",
+      "score": 8.28212
+    },
+    {
+      "feature": "sadr",
+      "score": 8.28035
+    },
+    {
+      "feature": "falluja",
+      "score": 8.11758
+    },
+    {
+      "feature": "the gaza",
+      "score": 7.94502
+    },
+    {
+      "feature": "hostages",
+      "score": 7.82959
+    },
+    {
+      "feature": "yasser",
+      "score": 7.78961
+    },
+    {
+      "feature": ". kabul",
+      "score": 7.74524
+    },
+    {
+      "feature": "gaza strip",
+      "score": 7.69478
+    }
+  ],
+  "Sports": [
+    {
+      "feature": "( sports",
+      "score": 9.37965
+    },
+    {
+      "feature": "sports network",
+      "score": 8.59359
+    },
+    {
+      "feature": "network )",
+      "score": 8.36303
+    },
+    {
+      "feature": "ticker )",
+      "score": 7.87588
+    },
+    {
+      "feature": "preseason",
+      "score": 7.63773
+    },
+    {
+      "feature": "knicks",
+      "score": 7.61204
+    },
+    {
+      "feature": "head coach",
+      "score": 7.61204
+    },
+    {
+      "feature": "quarterback",
+      "score": 7.50007
+    },
+    {
+      "feature": "nextel cup",
+      "score": 7.42982
+    },
+    {
+      "feature": "broncos",
+      "score": 7.42355
+    },
+    {
+      "feature": "coaching",
+      "score": 7.4109
+    },
+    {
+      "feature": "rams",
+      "score": 7.39809
+    }
+  ],
+  "Business": [
+    {
+      "feature": "/ fullquote",
+      "score": 10.28211
+    },
+    {
+      "feature": "fullquote",
+      "score": 10.28211
+    },
+    {
+      "feature": ". investor",
+      "score": 9.59086
+    },
+    {
+      "feature": "stocks /",
+      "score": 9.58899
+    },
+    {
+      "feature": "/ quickinfo",
+      "score": 9.58899
+    },
+    {
+      "feature": "quickinfo",
+      "score": 9.58899
+    },
+    {
+      "feature": "= /",
+      "score": 9.58899
+    },
+    {
+      "feature": "aspx",
+      "score": 9.58899
+    },
+    {
+      "feature": "fullquote .",
+      "score": 9.58899
+    },
+    {
+      "feature": "fullquote \"",
+      "score": 9.58899
+    },
+    {
+      "feature": "quickinfo /",
+      "score": 9.58899
+    },
+    {
+      "feature": "/ stocks",
+      "score": 9.58899
+    }
+  ],
+  "Sci/Tech": [
+    {
+      "feature": "pc world",
+      "score": 8.15263
+    },
+    {
+      "feature": "strong &",
+      "score": 8.1408
+    },
+    {
+      "feature": "mozilla",
+      "score": 8.08576
+    },
+    {
+      "feature": "cassini",
+      "score": 7.88829
+    },
+    {
+      "feature": "ziff davis",
+      "score": 7.83722
+    },
+    {
+      "feature": "ziff",
+      "score": 7.83722
+    },
+    {
+      "feature": ". jhtml",
+      "score": 7.71292
+    },
+    {
+      "feature": "jhtml",
+      "score": 7.71292
+    },
+    {
+      "feature": "jhtml ?",
+      "score": 7.71292
+    },
+    {
+      "feature": "uk /",
+      "score": 7.70834
+    },
+    {
+      "feature": "financequotelookup .",
+      "score": 7.70375
+    },
+    {
+      "feature": "qtype",
+      "score": 7.70375
+    }
+  ]
+}

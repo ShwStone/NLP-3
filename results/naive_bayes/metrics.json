@@ -1,0 +1,400 @@
+{
+  "model": "Multinomial Naive Bayes",
+  "feature_config": {
+    "tokenizer": "same lowercased regex as WordTokenizer",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 3,
+    "max_features": 200000,
+    "n_features": 200000
+  },
+  "alpha": 0.1,
+  "alpha_candidates": [
+    0.1,
+    0.3,
+    1.0,
+    3.0
+  ],
+  "validation_tuning": [
+    {
+      "alpha": 0.1,
+      "validation_accuracy": 0.9103333333333333
+    },
+    {
+      "alpha": 0.3,
+      "validation_accuracy": 0.9101666666666667
+    },
+    {
+      "alpha": 1.0,
+      "validation_accuracy": 0.90775
+    },
+    {
+      "alpha": 3.0,
+      "validation_accuracy": 0.9056666666666666
+    }
+  ],
+  "validation": {
+    "num_examples": 12000,
+    "accuracy": 0.9103333333333333,
+    "macro_f1": 0.9100337447937255,
+    "per_class": {
+      "World": {
+        "precision": 0.9200819672131147,
+        "recall": 0.898,
+        "f1": 0.9089068825910931,
+        "support": 3000
+      },
+      "Sports": {
+        "precision": 0.9518578352180938,
+        "recall": 0.982,
+        "f1": 0.9666940114848236,
+        "support": 3000
+      },
+      "Business": {
+        "precision": 0.8987430167597765,
+        "recall": 0.858,
+        "f1": 0.8778990450204639,
+        "support": 3000
+      },
+      "Sci/Tech": {
+        "precision": 0.8705428846771603,
+        "recall": 0.9033333333333333,
+        "f1": 0.8866350400785212,
+        "support": 3000
+      }
+    },
+    "confusion_matrix": [
+      [
+        2694,
+        95,
+        118,
+        93
+      ],
+      [
+        25,
+        2946,
+        11,
+        18
+      ],
+      [
+        110,
+        24,
+        2574,
+        292
+      ],
+      [
+        99,
+        30,
+        161,
+        2710
+      ]
+    ]
+  },
+  "test": {
+    "num_examples": 7600,
+    "accuracy": 0.9056578947368421,
+    "macro_f1": 0.9052798689869643,
+    "per_class": {
+      "World": {
+        "precision": 0.9161740999462654,
+        "recall": 0.8973684210526316,
+        "f1": 0.9066737569795267,
+        "support": 1900
+      },
+      "Sports": {
+        "precision": 0.9520652728199898,
+        "recall": 0.9826315789473684,
+        "f1": 0.9671069671069671,
+        "support": 1900
+      },
+      "Business": {
+        "precision": 0.8919220055710306,
+        "recall": 0.8426315789473684,
+        "f1": 0.8665764546684709,
+        "support": 1900
+      },
+      "Sci/Tech": {
+        "precision": 0.8623298033282905,
+        "recall": 0.9,
+        "f1": 0.8807622971928921,
+        "support": 1900
+      }
+    },
+    "confusion_matrix": [
+      [
+        1705,
+        58,
+        82,
+        55
+      ],
+      [
+        20,
+        1867,
+        3,
+        10
+      ],
+      [
+        72,
+        19,
+        1601,
+        208
+      ],
+      [
+        64,
+        17,
+        109,
+        1710
+      ]
+    ]
+  },
+  "parameters": {
+    "learned_log_probabilities": 800000,
+    "class_log_priors": 4,
+    "total": 800004,
+    "note": "NB 的可学习量是每个类别每个特征的对数概率，不是神经网络权重"
+  },
+  "feature_matrix": {
+    "train_rows": 108000,
+    "train_nnz": 7569733,
+    "train_density": 0.00035045060185185186,
+    "test_rows": 7600,
+    "test_nnz": 517938
+  },
+  "train_seconds": {
+    "feature_extraction_and_transform": 6.830372157972306,
+    "nb_fit": 0.019982825964689255,
+    "total": 6.850354983936995
+  },
+  "inference_seconds_including_transform": 0.28042387310415506,
+  "test_examples_per_second": 27101.829512130043,
+  "sklearn_crosscheck": {
+    "accuracy": 0.9056578947368421,
+    "prediction_agreement": 1.0,
+    "accuracy_difference": 0.0
+  },
+  "top_features": {
+    "World": [
+      {
+        "feature": "( canadian",
+        "score": 8.32839
+      },
+      {
+        "feature": "arafat",
+        "score": 8.31166
+      },
+      {
+        "feature": "hamas",
+        "score": 8.30592
+      },
+      {
+        "feature": "gaza",
+        "score": 8.28804
+      },
+      {
+        "feature": "militants",
+        "score": 8.28212
+      },
+      {
+        "feature": "sadr",
+        "score": 8.28035
+      },
+      {
+        "feature": "falluja",
+        "score": 8.11758
+      },
+      {
+        "feature": "the gaza",
+        "score": 7.94502
+      },
+      {
+        "feature": "hostages",
+        "score": 7.82959
+      },
+      {
+        "feature": "yasser",
+        "score": 7.78961
+      },
+      {
+        "feature": ". kabul",
+        "score": 7.74524
+      },
+      {
+        "feature": "gaza strip",
+        "score": 7.69478
+      }
+    ],
+    "Sports": [
+      {
+        "feature": "( sports",
+        "score": 9.37965
+      },
+      {
+        "feature": "sports network",
+        "score": 8.59359
+      },
+      {
+        "feature": "network )",
+        "score": 8.36303
+      },
+      {
+        "feature": "ticker )",
+        "score": 7.87588
+      },
+      {
+        "feature": "preseason",
+        "score": 7.63773
+      },
+      {
+        "feature": "knicks",
+        "score": 7.61204
+      },
+      {
+        "feature": "head coach",
+        "score": 7.61204
+      },
+      {
+        "feature": "quarterback",
+        "score": 7.50007
+      },
+      {
+        "feature": "nextel cup",
+        "score": 7.42982
+      },
+      {
+        "feature": "broncos",
+        "score": 7.42355
+      },
+      {
+        "feature": "coaching",
+        "score": 7.4109
+      },
+      {
+        "feature": "rams",
+        "score": 7.39809
+      }
+    ],
+    "Business": [
+      {
+        "feature": "/ fullquote",
+        "score": 10.28211
+      },
+      {
+        "feature": "fullquote",
+        "score": 10.28211
+      },
+      {
+        "feature": ". investor",
+        "score": 9.59086
+      },
+      {
+        "feature": "stocks /",
+        "score": 9.58899
+      },
+      {
+        "feature": "/ quickinfo",
+        "score": 9.58899
+      },
+      {
+        "feature": "quickinfo",
+        "score": 9.58899
+      },
+      {
+        "feature": "= /",
+        "score": 9.58899
+      },
+      {
+        "feature": "aspx",
+        "score": 9.58899
+      },
+      {
+        "feature": "fullquote .",
+        "score": 9.58899
+      },
+      {
+        "feature": "fullquote \"",
+        "score": 9.58899
+      },
+      {
+        "feature": "quickinfo /",
+        "score": 9.58899
+      },
+      {
+        "feature": "/ stocks",
+        "score": 9.58899
+      }
+    ],
+    "Sci/Tech": [
+      {
+        "feature": "pc world",
+        "score": 8.15263
+      },
+      {
+        "feature": "strong &",
+        "score": 8.1408
+      },
+      {
+        "feature": "mozilla",
+        "score": 8.08576
+      },
+      {
+        "feature": "cassini",
+        "score": 7.88829
+      },
+      {
+        "feature": "ziff davis",
+        "score": 7.83722
+      },
+      {
+        "feature": "ziff",
+        "score": 7.83722
+      },
+      {
+        "feature": ". jhtml",
+        "score": 7.71292
+      },
+      {
+        "feature": "jhtml",
+        "score": 7.71292
+      },
+      {
+        "feature": "jhtml ?",
+        "score": 7.71292
+      },
+      {
+        "feature": "uk /",
+        "score": 7.70834
+      },
+      {
+        "feature": "financequotelookup .",
+        "score": 7.70375
+      },
+      {
+        "feature": "qtype",
+        "score": 7.70375
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cpu",
+    "gpu": null,
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T18:29:15.066179+08:00"
+  },
+  "data": {
+    "counts": {
+      "train": 108000,
+      "validation": 12000,
+      "test": 7600
+    },
+    "train_csv_sha256": "76a0a2d2f92b286371fe4d4044640910a04a803fdd2538e0f3f29a5c6f6b672e",
+    "test_csv_sha256": "521465c2428ed7f02f8d6db6ffdd4b5447c1c701962353eb2c40d548c3c85699"
+  }
+}

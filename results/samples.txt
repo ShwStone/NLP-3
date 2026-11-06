@@ -1,0 +1,32 @@
+=== 测试样本 index=37，金标准 World ===
+Title: 1994 Law Designed to Preserve Guard Jobs (AP)
+Description: AP - A 1994 law strengthened job protections for National Guard and Reserve troops called to active duty. Here are major provisions of the Uniformed Services Employment and Reemployment Rights Act (USERRA).
+预测：
+  decoder_full       World     ✓
+  decoder_frozen     Sci/Tech  ✗
+  decoder_scratch    World     ✓
+  naive_bayes        World     ✓
+  prompt_zeroshot    Business  ✗
+  prompt_fewshot4    Business  ✗
+
+=== 测试样本 index=41，金标准 Business ===
+Title: Retailers Vie for Back-To-School Buyers (Reuters)
+Description: Reuters - Apparel retailers are hoping their\back-to-school fashions will make the grade among\style-conscious teens and young adults this fall, but it could\be a tough sell, with students and parents keeping a tighter\hold on their wallets.
+预测：
+  decoder_full       Business  ✓
+  decoder_frozen     Sci/Tech  ✗
+  decoder_scratch    Business  ✓
+  naive_bayes        Sci/Tech  ✗
+  prompt_zeroshot    Business  ✓
+  prompt_fewshot4    Sci/Tech  ✗
+
+=== 测试样本 index=397，金标准 Sci/Tech ===
+Title: Wiretapping on the Net: Who pays?
+Description: NEW YORK At first glance, it might seem like the simple extension of a standard tool in the fight against the bad guys. But in fact, wiretapping Internet phones to monitor criminals and terrorists is costly
+预测：
+  decoder_full       Business  ✗
+  decoder_frozen     Sci/Tech  ✓
+  decoder_scratch    Sci/Tech  ✓
+  naive_bayes        Sci/Tech  ✓
+  prompt_zeroshot    Sci/Tech  ✓
+  prompt_fewshot4    Sci/Tech  ✓

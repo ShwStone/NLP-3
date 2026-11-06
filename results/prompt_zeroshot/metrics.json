@@ -1,0 +1,126 @@
+{
+  "model": "prompt scoring with frozen decoder LM",
+  "shots_per_class": 0,
+  "num_exemplars": 0,
+  "verbalizers": {
+    "World": "politics",
+    "Sports": "sports",
+    "Business": "financial",
+    "Sci/Tech": "computers"
+  },
+  "verbalizer_preset": "tuned",
+  "calibrated": true,
+  "calibration_scores": [
+    -7.9985270500183105,
+    -7.772602081298828,
+    -8.230975151062012,
+    -8.464150428771973
+  ],
+  "template": "title: {title} description: {description} topic: {verbalizer}<eos>",
+  "scoring": "mean log P(verbalizer tokens, <eos> | prompt); no training",
+  "trainable_parameters": 0,
+  "context_length": 192,
+  "prompt_max_length": 192,
+  "label_ids": [
+    [
+      2895
+    ],
+    [
+      291
+    ],
+    [
+      449
+    ],
+    [
+      859
+    ]
+  ],
+  "exemplars": {
+    "World": [],
+    "Sports": [],
+    "Business": [],
+    "Sci/Tech": []
+  },
+  "test": {
+    "num_examples": 7600,
+    "accuracy": 0.7323684210526316,
+    "macro_f1": 0.7294474752380571,
+    "per_class": {
+      "World": {
+        "precision": 0.6638913234005258,
+        "recall": 0.7973684210526316,
+        "f1": 0.7245337159253945,
+        "support": 1900
+      },
+      "Sports": {
+        "precision": 0.8721384701284198,
+        "recall": 0.8221052631578948,
+        "f1": 0.8463830940124627,
+        "support": 1900
+      },
+      "Business": {
+        "precision": 0.6647321428571429,
+        "recall": 0.7836842105263158,
+        "f1": 0.7193236714975846,
+        "support": 1900
+      },
+      "Sci/Tech": {
+        "precision": 0.777000777000777,
+        "recall": 0.5263157894736842,
+        "f1": 0.627549419516787,
+        "support": 1900
+      }
+    },
+    "confusion_matrix": [
+      [
+        1515,
+        110,
+        203,
+        72
+      ],
+      [
+        139,
+        1562,
+        166,
+        33
+      ],
+      [
+        206,
+        23,
+        1489,
+        182
+      ],
+      [
+        422,
+        96,
+        382,
+        1000
+      ]
+    ]
+  },
+  "inference_seconds": 3.078838767018169,
+  "test_examples_per_second": 2468.463136626196,
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T18:27:23.353643+08:00"
+  },
+  "data": {
+    "counts": {
+      "train": 108000,
+      "validation": 12000,
+      "test": 7600
+    },
+    "train_csv_sha256": "76a0a2d2f92b286371fe4d4044640910a04a803fdd2538e0f3f29a5c6f6b672e",
+    "test_csv_sha256": "521465c2428ed7f02f8d6db6ffdd4b5447c1c701962353eb2c40d548c3c85699"
+  },
+  "lm_checkpoint": "/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt",
+  "lm_checkpoint_step": 2000
+}

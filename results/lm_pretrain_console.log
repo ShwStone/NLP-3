@@ -1,0 +1,80 @@
+{
+  "config": {
+    "vocab_size": 30000,
+    "context_length": 192,
+    "n_layers": 4,
+    "d_model": 256,
+    "n_heads": 4,
+    "dropout": 0.1
+  },
+  "parameters": 10888704,
+  "settings": {
+    "steps": 2000,
+    "batch_size": 64,
+    "context_length": 192,
+    "max_document_tokens": 256,
+    "peak_lr": 0.0005,
+    "warmup_steps": 100,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay_matrix": 0.1,
+    "gradient_clip": 1.0,
+    "seed": 42,
+    "eval_interval": 250,
+    "eval_batches": 16,
+    "train_eval_seed": 142,
+    "validation_eval_seed": 242,
+    "precision": "BF16 autocast; FP32 parameters/optimizer"
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T17:51:33.057097+08:00"
+  }
+}
+step=   0 train=10.3450 val=10.3449 val_ppl=31099.48 elapsed=0.8s
+step= 250 train=5.4902 val=5.4918 val_ppl=242.69 elapsed=14.2s
+step= 500 train=4.8444 val=4.8664 val_ppl=129.85 elapsed=27.2s
+step= 750 train=4.5087 val=4.5520 val_ppl=94.82 elapsed=40.2s
+step=1000 train=4.2830 val=4.3517 val_ppl=77.61 elapsed=53.3s
+step=1250 train=4.1327 val=4.2228 val_ppl=68.23 elapsed=66.3s
+step=1500 train=4.0296 val=4.1412 val_ppl=62.88 elapsed=79.4s
+step=1750 train=3.9691 val=4.0929 val_ppl=59.92 elapsed=92.5s
+step=2000 train=3.9327 val=4.0634 val_ppl=58.17 elapsed=105.5s
+语言模型预训练完成。
+{
+  "initial": {
+    "step": 0,
+    "train_loss": 10.345028936862946,
+    "validation_loss": 10.344946265220642,
+    "train_perplexity": 31102.047650840374,
+    "validation_perplexity": 31099.476499764183,
+    "elapsed_seconds": 0.7932303962297738
+  },
+  "final": {
+    "step": 2000,
+    "train_loss": 3.93273663520813,
+    "validation_loss": 4.063428685069084,
+    "train_perplexity": 51.04648229620292,
+    "validation_perplexity": 58.17342789310389,
+    "elapsed_seconds": 105.53333559911698
+  },
+  "best": {
+    "step": 2000,
+    "train_loss": 3.93273663520813,
+    "validation_loss": 4.063428685069084,
+    "train_perplexity": 51.04648229620292,
+    "validation_perplexity": 58.17342789310389,
+    "elapsed_seconds": 105.53333559911698
+  },
+  "seconds": 105.55899845436215
+}

@@ -1,0 +1,150 @@
+{
+  "model": "prompt scoring with frozen decoder LM",
+  "shots_per_class": 1,
+  "num_exemplars": 4,
+  "verbalizers": {
+    "World": "politics",
+    "Sports": "sports",
+    "Business": "financial",
+    "Sci/Tech": "computers"
+  },
+  "verbalizer_preset": "tuned",
+  "calibrated": true,
+  "calibration_scores": [
+    -7.05055570602417,
+    -7.5519866943359375,
+    -7.892564296722412,
+    -8.39943790435791
+  ],
+  "template": "title: {title} description: {description} topic: {verbalizer}<eos>",
+  "scoring": "mean log P(verbalizer tokens, <eos> | prompt); no training",
+  "trainable_parameters": 0,
+  "context_length": 192,
+  "prompt_max_length": 192,
+  "label_ids": [
+    [
+      2895
+    ],
+    [
+      291
+    ],
+    [
+      449
+    ],
+    [
+      859
+    ]
+  ],
+  "exemplars": {
+    "World": [
+      {
+        "title": "Jenkins court martial to begin Nov 3",
+        "description": "TOKYO (AFP) - The court martial of US Army Sergeant Charles Jenkins, accused of deserting to North Korea nearly four decades ago, will begin in Japan on November 3, the US Army said Thursday.",
+        "verbalizer": "politics"
+      }
+    ],
+    "Sports": [
+      {
+        "title": "Katie Smith tears cartilage; disappointment for Serbia  amp; &lt;b&gt;...&lt;/b&gt;",
+        "description": "Athens, Greece (Sports Network) - US women #39;s basketball player Katie Smith will miss the remainder of the Olympics after an MRI exam revealed torn cartilage in her right knee.",
+        "verbalizer": "sports"
+      }
+    ],
+    "Business": [
+      {
+        "title": "Halliburton Finds Talk of Nigerian Bribes (Reuters)",
+        "description": "Reuters - Halliburton Co. , once run by\\Vice President Dick Cheney, said an internal probe found\\information suggesting that members of a consortium it helps\\lead considered bribing Nigerian officials to win business.",
+        "verbalizer": "financial"
+      }
+    ],
+    "Sci/Tech": [
+      {
+        "title": "Pigeons homing instincts due to their magnetic beaks!:",
+        "description": "World News: Washington, Nov 27 : Scientist have always wondered how pigeons manage to be such good navigators and have a  #39;nose for the north #39; and now a new study has suggested that it is because they have small magnetic particles in their beaks, which",
+        "verbalizer": "computers"
+      }
+    ]
+  },
+  "test": {
+    "num_examples": 7600,
+    "accuracy": 0.6356578947368421,
+    "macro_f1": 0.6020452524959974,
+    "per_class": {
+      "World": {
+        "precision": 0.8378378378378378,
+        "recall": 0.1957894736842105,
+        "f1": 0.3174061433447099,
+        "support": 1900
+      },
+      "Sports": {
+        "precision": 0.7466042154566744,
+        "recall": 0.8389473684210527,
+        "f1": 0.7900867410161091,
+        "support": 1900
+      },
+      "Business": {
+        "precision": 0.5389755011135857,
+        "recall": 0.7642105263157895,
+        "f1": 0.632128863735307,
+        "support": 1900
+      },
+      "Sci/Tech": {
+        "precision": 0.6072195960464117,
+        "recall": 0.7436842105263158,
+        "f1": 0.6685592618878637,
+        "support": 1900
+      }
+    },
+    "confusion_matrix": [
+      [
+        372,
+        358,
+        733,
+        437
+      ],
+      [
+        8,
+        1594,
+        190,
+        108
+      ],
+      [
+        25,
+        54,
+        1452,
+        369
+      ],
+      [
+        39,
+        129,
+        319,
+        1413
+      ]
+    ]
+  },
+  "inference_seconds": 4.840581024996936,
+  "test_examples_per_second": 1570.0594537625389,
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T18:27:41.932567+08:00"
+  },
+  "data": {
+    "counts": {
+      "train": 108000,
+      "validation": 12000,
+      "test": 7600
+    },
+    "train_csv_sha256": "76a0a2d2f92b286371fe4d4044640910a04a803fdd2538e0f3f29a5c6f6b672e",
+    "test_csv_sha256": "521465c2428ed7f02f8d6db6ffdd4b5447c1c701962353eb2c40d548c3c85699"
+  },
+  "lm_checkpoint": "/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt",
+  "lm_checkpoint_step": 2000
+}

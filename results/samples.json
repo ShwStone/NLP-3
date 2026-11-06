@@ -1,0 +1,71 @@
+[
+  {
+    "index": 37,
+    "gold": "World",
+    "title": "1994 Law Designed to Preserve Guard Jobs (AP)",
+    "description": "AP - A 1994 law strengthened job protections for National Guard and Reserve troops called to active duty. Here are major provisions of the Uniformed Services Employment and Reemployment Rights Act (USERRA).",
+    "text": "1994 Law Designed to Preserve Guard Jobs (AP). AP - A 1994 law strengthened job protections for National Guard and Reserve troops called to active duty. Here are major provisions of the Uniformed Services Employment and Reemployment Rights Act (USERRA).",
+    "predictions": {
+      "decoder_full": "World",
+      "decoder_frozen": "Sci/Tech",
+      "decoder_scratch": "World",
+      "naive_bayes": "World",
+      "prompt_zeroshot": "Business",
+      "prompt_fewshot4": "Business"
+    },
+    "correct": {
+      "decoder_full": true,
+      "decoder_frozen": false,
+      "decoder_scratch": true,
+      "naive_bayes": true,
+      "prompt_zeroshot": false,
+      "prompt_fewshot4": false
+    }
+  },
+  {
+    "index": 41,
+    "gold": "Business",
+    "title": "Retailers Vie for Back-To-School Buyers (Reuters)",
+    "description": "Reuters - Apparel retailers are hoping their\\back-to-school fashions will make the grade among\\style-conscious teens and young adults this fall, but it could\\be a tough sell, with students and parents keeping a tighter\\hold on their wallets.",
+    "text": "Retailers Vie for Back-To-School Buyers (Reuters). Reuters - Apparel retailers are hoping their\\back-to-school fashions will make the grade among\\style-conscious teens and young adults this fall, but it could\\be a tough sell, with students and parents keeping a tighter\\hold on their wallets.",
+    "predictions": {
+      "decoder_full": "Business",
+      "decoder_frozen": "Sci/Tech",
+      "decoder_scratch": "Business",
+      "naive_bayes": "Sci/Tech",
+      "prompt_zeroshot": "Business",
+      "prompt_fewshot4": "Sci/Tech"
+    },
+    "correct": {
+      "decoder_full": true,
+      "decoder_frozen": false,
+      "decoder_scratch": true,
+      "naive_bayes": false,
+      "prompt_zeroshot": true,
+      "prompt_fewshot4": false
+    }
+  },
+  {
+    "index": 397,
+    "gold": "Sci/Tech",
+    "title": "Wiretapping on the Net: Who pays?",
+    "description": "NEW YORK At first glance, it might seem like the simple extension of a standard tool in the fight against the bad guys. But in fact, wiretapping Internet phones to monitor criminals and terrorists is costly",
+    "text": "Wiretapping on the Net: Who pays?. NEW YORK At first glance, it might seem like the simple extension of a standard tool in the fight against the bad guys. But in fact, wiretapping Internet phones to monitor criminals and terrorists is costly",
+    "predictions": {
+      "decoder_full": "Business",
+      "decoder_frozen": "Sci/Tech",
+      "decoder_scratch": "Sci/Tech",
+      "naive_bayes": "Sci/Tech",
+      "prompt_zeroshot": "Sci/Tech",
+      "prompt_fewshot4": "Sci/Tech"
+    },
+    "correct": {
+      "decoder_full": false,
+      "decoder_frozen": true,
+      "decoder_scratch": true,
+      "naive_bayes": true,
+      "prompt_zeroshot": true,
+      "prompt_fewshot4": true
+    }
+  }
+]

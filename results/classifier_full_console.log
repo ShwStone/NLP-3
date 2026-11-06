@@ -1,0 +1,179 @@
+已加载语言模型权重：/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt（step=2000）
+{
+  "parameters": {
+    "total": 10889732,
+    "trainable": 10889732,
+    "frozen": 0,
+    "backbone": 10888704,
+    "classification_head": 1028,
+    "trainable_fraction": 1.0,
+    "tensors": 54
+  },
+  "settings": {
+    "mode": "full",
+    "epochs": 3,
+    "batch_size": 64,
+    "lr_backbone": 0.0002,
+    "lr_head": 0.001,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "gradient_clip": 1.0,
+    "max_length": 192,
+    "pooling": "last",
+    "head_dropout": 0.1,
+    "seed": 42,
+    "steps_per_epoch": 1688,
+    "total_steps": 5064,
+    "warmup_steps": 506,
+    "checkpoint_selection": "best validation accuracy; ties -> lower validation loss",
+    "precision": "BF16 autocast; FP32 parameters/optimizer",
+    "lm_checkpoint": "/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt",
+    "lm_checkpoint_step": 2000,
+    "train_examples": 108000,
+    "validation_examples": 12000,
+    "test_examples": 7600
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T17:54:17.421977+08:00"
+  }
+}
+epoch=1 step=50/5064 loss=1.2148 acc=0.4575 elapsed=1.3s
+epoch=1 step=100/5064 loss=0.8416 acc=0.6533 elapsed=2.2s
+epoch=1 step=150/5064 loss=0.6805 acc=0.7289 elapsed=3.0s
+epoch=1 step=200/5064 loss=0.5945 acc=0.7679 elapsed=3.9s
+epoch=1 step=250/5064 loss=0.5435 acc=0.7919 elapsed=4.8s
+epoch=1 step=300/5064 loss=0.5147 acc=0.8067 elapsed=5.7s
+epoch=1 step=350/5064 loss=0.4842 acc=0.8200 elapsed=6.6s
+epoch=1 step=400/5064 loss=0.4664 acc=0.8280 elapsed=7.5s
+epoch=1 step=450/5064 loss=0.4508 acc=0.8351 elapsed=8.4s
+epoch=1 step=500/5064 loss=0.4391 acc=0.8400 elapsed=9.2s
+epoch=1 step=550/5064 loss=0.4283 acc=0.8444 elapsed=10.1s
+epoch=1 step=600/5064 loss=0.4186 acc=0.8490 elapsed=11.0s
+epoch=1 step=650/5064 loss=0.4104 acc=0.8525 elapsed=11.8s
+epoch=1 step=700/5064 loss=0.4031 acc=0.8556 elapsed=12.7s
+epoch=1 step=750/5064 loss=0.3974 acc=0.8583 elapsed=13.6s
+epoch=1 step=800/5064 loss=0.3911 acc=0.8611 elapsed=14.5s
+epoch=1 step=850/5064 loss=0.3844 acc=0.8637 elapsed=15.4s
+epoch=1 step=900/5064 loss=0.3781 acc=0.8663 elapsed=16.2s
+epoch=1 step=950/5064 loss=0.3728 acc=0.8683 elapsed=17.1s
+epoch=1 step=1000/5064 loss=0.3678 acc=0.8702 elapsed=18.0s
+epoch=1 step=1050/5064 loss=0.3637 acc=0.8717 elapsed=18.9s
+epoch=1 step=1100/5064 loss=0.3603 acc=0.8733 elapsed=19.7s
+epoch=1 step=1150/5064 loss=0.3568 acc=0.8746 elapsed=20.6s
+epoch=1 step=1200/5064 loss=0.3521 acc=0.8764 elapsed=21.5s
+epoch=1 step=1250/5064 loss=0.3477 acc=0.8780 elapsed=22.4s
+epoch=1 step=1300/5064 loss=0.3436 acc=0.8796 elapsed=23.3s
+epoch=1 step=1350/5064 loss=0.3401 acc=0.8809 elapsed=24.2s
+epoch=1 step=1400/5064 loss=0.3364 acc=0.8824 elapsed=25.0s
+epoch=1 step=1450/5064 loss=0.3334 acc=0.8836 elapsed=25.9s
+epoch=1 step=1500/5064 loss=0.3297 acc=0.8848 elapsed=26.8s
+epoch=1 step=1550/5064 loss=0.3271 acc=0.8857 elapsed=27.7s
+epoch=1 step=1600/5064 loss=0.3247 acc=0.8868 elapsed=28.6s
+epoch=1 step=1650/5064 loss=0.3225 acc=0.8876 elapsed=29.4s
+{"epoch": 1, "step": 1688, "train_loss": 0.3204855317098123, "train_accuracy": 0.8883796296296296, "validation_loss": 0.24896211910247804, "validation_accuracy": 0.91675, "validation_macro_f1": 0.9172992008044142, "elapsed_seconds": 32.12018528999761}
+保存新的最佳 checkpoint（epoch=1, val_acc=0.9167）
+epoch=2 step=1700/5064 loss=0.1985 acc=0.9336 elapsed=32.4s
+epoch=2 step=1750/5064 loss=0.2120 acc=0.9320 elapsed=33.3s
+epoch=2 step=1800/5064 loss=0.2116 acc=0.9302 elapsed=34.2s
+epoch=2 step=1850/5064 loss=0.2065 acc=0.9311 elapsed=35.0s
+epoch=2 step=1900/5064 loss=0.2108 acc=0.9293 elapsed=36.0s
+epoch=2 step=1950/5064 loss=0.2109 acc=0.9292 elapsed=36.8s
+epoch=2 step=2000/5064 loss=0.2070 acc=0.9307 elapsed=37.7s
+epoch=2 step=2050/5064 loss=0.2074 acc=0.9312 elapsed=38.6s
+epoch=2 step=2100/5064 loss=0.2071 acc=0.9317 elapsed=39.5s
+epoch=2 step=2150/5064 loss=0.2074 acc=0.9312 elapsed=40.4s
+epoch=2 step=2200/5064 loss=0.2085 acc=0.9305 elapsed=41.3s
+epoch=2 step=2250/5064 loss=0.2066 acc=0.9312 elapsed=42.1s
+epoch=2 step=2300/5064 loss=0.2087 acc=0.9307 elapsed=42.9s
+epoch=2 step=2350/5064 loss=0.2074 acc=0.9311 elapsed=43.8s
+epoch=2 step=2400/5064 loss=0.2064 acc=0.9313 elapsed=44.7s
+epoch=2 step=2450/5064 loss=0.2064 acc=0.9313 elapsed=45.6s
+epoch=2 step=2500/5064 loss=0.2046 acc=0.9318 elapsed=46.5s
+epoch=2 step=2550/5064 loss=0.2038 acc=0.9318 elapsed=47.4s
+epoch=2 step=2600/5064 loss=0.2028 acc=0.9321 elapsed=48.3s
+epoch=2 step=2650/5064 loss=0.2025 acc=0.9323 elapsed=49.2s
+epoch=2 step=2700/5064 loss=0.2016 acc=0.9329 elapsed=50.1s
+epoch=2 step=2750/5064 loss=0.2007 acc=0.9330 elapsed=51.0s
+epoch=2 step=2800/5064 loss=0.1994 acc=0.9332 elapsed=51.8s
+epoch=2 step=2850/5064 loss=0.1987 acc=0.9333 elapsed=52.7s
+epoch=2 step=2900/5064 loss=0.1989 acc=0.9335 elapsed=53.6s
+epoch=2 step=2950/5064 loss=0.1985 acc=0.9336 elapsed=54.5s
+epoch=2 step=3000/5064 loss=0.1987 acc=0.9336 elapsed=55.4s
+epoch=2 step=3050/5064 loss=0.1990 acc=0.9334 elapsed=56.3s
+epoch=2 step=3100/5064 loss=0.1987 acc=0.9335 elapsed=57.2s
+epoch=2 step=3150/5064 loss=0.1983 acc=0.9337 elapsed=58.1s
+epoch=2 step=3200/5064 loss=0.1977 acc=0.9338 elapsed=58.9s
+epoch=2 step=3250/5064 loss=0.1977 acc=0.9338 elapsed=59.8s
+epoch=2 step=3300/5064 loss=0.1970 acc=0.9341 elapsed=60.7s
+epoch=2 step=3350/5064 loss=0.1962 acc=0.9343 elapsed=61.6s
+{"epoch": 2, "step": 3376, "train_loss": 0.1959488515191608, "train_accuracy": 0.9342777777777778, "validation_loss": 0.20403852343559264, "validation_accuracy": 0.9330833333333334, "validation_macro_f1": 0.9332002455637811, "elapsed_seconds": 63.07432400388643}
+保存新的最佳 checkpoint（epoch=2, val_acc=0.9331）
+epoch=3 step=3400/5064 loss=0.1513 acc=0.9466 elapsed=63.7s
+epoch=3 step=3450/5064 loss=0.1503 acc=0.9459 elapsed=64.6s
+epoch=3 step=3500/5064 loss=0.1505 acc=0.9471 elapsed=65.5s
+epoch=3 step=3550/5064 loss=0.1434 acc=0.9499 elapsed=66.4s
+epoch=3 step=3600/5064 loss=0.1404 acc=0.9505 elapsed=67.3s
+epoch=3 step=3650/5064 loss=0.1438 acc=0.9500 elapsed=68.2s
+epoch=3 step=3700/5064 loss=0.1479 acc=0.9491 elapsed=69.0s
+epoch=3 step=3750/5064 loss=0.1498 acc=0.9487 elapsed=69.9s
+epoch=3 step=3800/5064 loss=0.1495 acc=0.9492 elapsed=70.8s
+epoch=3 step=3850/5064 loss=0.1508 acc=0.9483 elapsed=71.7s
+epoch=3 step=3900/5064 loss=0.1522 acc=0.9481 elapsed=72.6s
+epoch=3 step=3950/5064 loss=0.1521 acc=0.9478 elapsed=73.5s
+epoch=3 step=4000/5064 loss=0.1520 acc=0.9481 elapsed=74.3s
+epoch=3 step=4050/5064 loss=0.1522 acc=0.9481 elapsed=75.2s
+epoch=3 step=4100/5064 loss=0.1513 acc=0.9482 elapsed=76.0s
+epoch=3 step=4150/5064 loss=0.1515 acc=0.9481 elapsed=77.0s
+epoch=3 step=4200/5064 loss=0.1516 acc=0.9480 elapsed=77.8s
+epoch=3 step=4250/5064 loss=0.1520 acc=0.9478 elapsed=78.7s
+epoch=3 step=4300/5064 loss=0.1513 acc=0.9481 elapsed=79.6s
+epoch=3 step=4350/5064 loss=0.1514 acc=0.9481 elapsed=80.5s
+epoch=3 step=4400/5064 loss=0.1514 acc=0.9480 elapsed=81.5s
+epoch=3 step=4450/5064 loss=0.1514 acc=0.9480 elapsed=82.3s
+epoch=3 step=4500/5064 loss=0.1510 acc=0.9482 elapsed=83.3s
+epoch=3 step=4550/5064 loss=0.1509 acc=0.9485 elapsed=84.1s
+epoch=3 step=4600/5064 loss=0.1507 acc=0.9484 elapsed=85.0s
+epoch=3 step=4650/5064 loss=0.1501 acc=0.9487 elapsed=85.9s
+epoch=3 step=4700/5064 loss=0.1499 acc=0.9489 elapsed=86.8s
+epoch=3 step=4750/5064 loss=0.1494 acc=0.9490 elapsed=87.6s
+epoch=3 step=4800/5064 loss=0.1487 acc=0.9492 elapsed=88.5s
+epoch=3 step=4850/5064 loss=0.1487 acc=0.9492 elapsed=89.4s
+epoch=3 step=4900/5064 loss=0.1487 acc=0.9491 elapsed=90.3s
+epoch=3 step=4950/5064 loss=0.1483 acc=0.9493 elapsed=91.1s
+epoch=3 step=5000/5064 loss=0.1485 acc=0.9493 elapsed=92.0s
+epoch=3 step=5050/5064 loss=0.1477 acc=0.9496 elapsed=92.9s
+epoch=3 step=5064/5064 loss=0.1476 acc=0.9497 elapsed=93.1s
+{"epoch": 3, "step": 5064, "train_loss": 0.14758522575872915, "train_accuracy": 0.9496851851851852, "validation_loss": 0.20479572689533235, "validation_accuracy": 0.935, "validation_macro_f1": 0.9348868791538177, "elapsed_seconds": 94.15155497193336}
+保存新的最佳 checkpoint（epoch=3, val_acc=0.9350）
+{
+  "mode": "full",
+  "parameters": {
+    "total": 10889732,
+    "trainable": 10889732,
+    "frozen": 0,
+    "backbone": 10888704,
+    "classification_head": 1028,
+    "trainable_fraction": 1.0,
+    "tensors": 54
+  },
+  "best_epoch": 3,
+  "best_validation": {
+    "accuracy": 0.935
+  },
+  "test": {
+    "accuracy": 0.9323684210526316,
+    "macro_f1": 0.9322155856765453,
+    "loss": 0.21658148982022937
+  },
+  "training_seconds": 94.46746897464618,
+  "inference_seconds": 0.6218317886814475
+}

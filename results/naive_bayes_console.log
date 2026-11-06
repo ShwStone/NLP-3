@@ -1,0 +1,21 @@
+词袋特征数：200000；训练矩阵 nnz=7569733
+alpha=0.1  val_acc=0.91033
+alpha=0.3  val_acc=0.91017
+alpha=1.0  val_acc=0.90775
+alpha=3.0  val_acc=0.90567
+{
+  "alpha": 0.1,
+  "n_features": 200000,
+  "parameters": 800004,
+  "validation_accuracy": 0.9103333333333333,
+  "test_accuracy": 0.9056578947368421,
+  "test_macro_f1": 0.9052798689869643,
+  "train_seconds": {
+    "feature_extraction_and_transform": 6.830372157972306,
+    "nb_fit": 0.019982825964689255,
+    "total": 6.850354983936995
+  },
+  "inference_seconds": 0.28042387310415506,
+  "sklearn_accuracy": 0.9056578947368421,
+  "prediction_agreement": 1.0
+}

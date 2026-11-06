@@ -1,0 +1,286 @@
+已加载语言模型权重：/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt（step=2000）
+{
+  "parameters": {
+    "total": 10889732,
+    "trainable": 1028,
+    "frozen": 10888704,
+    "backbone": 10888704,
+    "classification_head": 1028,
+    "trainable_fraction": 9.440085394204375e-05,
+    "tensors": 54
+  },
+  "settings": {
+    "mode": "frozen",
+    "epochs": 6,
+    "batch_size": 64,
+    "lr_backbone": 0.0,
+    "lr_head": 0.001,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "gradient_clip": 1.0,
+    "max_length": 192,
+    "pooling": "last",
+    "head_dropout": 0.1,
+    "seed": 42,
+    "steps_per_epoch": 1688,
+    "total_steps": 10128,
+    "warmup_steps": 1012,
+    "checkpoint_selection": "best validation accuracy; ties -> lower validation loss",
+    "precision": "BF16 autocast; FP32 parameters/optimizer",
+    "lm_checkpoint": "/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt",
+    "lm_checkpoint_step": 2000,
+    "train_examples": 108000,
+    "validation_examples": 12000,
+    "test_examples": 7600
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T17:56:04.021984+08:00"
+  }
+}
+epoch=1 step=50/10128 loss=1.4850 acc=0.2284 elapsed=0.7s
+epoch=1 step=100/10128 loss=1.4073 acc=0.3120 elapsed=1.0s
+epoch=1 step=150/10128 loss=1.3000 acc=0.4222 elapsed=1.3s
+epoch=1 step=200/10128 loss=1.1855 acc=0.5112 elapsed=1.6s
+epoch=1 step=250/10128 loss=1.0807 acc=0.5728 elapsed=1.9s
+epoch=1 step=300/10128 loss=0.9913 acc=0.6159 elapsed=2.2s
+epoch=1 step=350/10128 loss=0.9157 acc=0.6497 elapsed=2.5s
+epoch=1 step=400/10128 loss=0.8597 acc=0.6737 elapsed=2.8s
+epoch=1 step=450/10128 loss=0.8114 acc=0.6939 elapsed=3.1s
+epoch=1 step=500/10128 loss=0.7742 acc=0.7090 elapsed=3.4s
+epoch=1 step=550/10128 loss=0.7412 acc=0.7227 elapsed=3.7s
+epoch=1 step=600/10128 loss=0.7118 acc=0.7347 elapsed=4.1s
+epoch=1 step=650/10128 loss=0.6871 acc=0.7446 elapsed=4.4s
+epoch=1 step=700/10128 loss=0.6661 acc=0.7532 elapsed=4.7s
+epoch=1 step=750/10128 loss=0.6490 acc=0.7602 elapsed=5.0s
+epoch=1 step=800/10128 loss=0.6337 acc=0.7663 elapsed=5.3s
+epoch=1 step=850/10128 loss=0.6191 acc=0.7718 elapsed=5.6s
+epoch=1 step=900/10128 loss=0.6063 acc=0.7766 elapsed=5.9s
+epoch=1 step=950/10128 loss=0.5946 acc=0.7817 elapsed=6.2s
+epoch=1 step=1000/10128 loss=0.5840 acc=0.7856 elapsed=6.6s
+epoch=1 step=1050/10128 loss=0.5760 acc=0.7889 elapsed=6.9s
+epoch=1 step=1100/10128 loss=0.5681 acc=0.7918 elapsed=7.2s
+epoch=1 step=1150/10128 loss=0.5605 acc=0.7950 elapsed=7.5s
+epoch=1 step=1200/10128 loss=0.5527 acc=0.7982 elapsed=7.8s
+epoch=1 step=1250/10128 loss=0.5456 acc=0.8010 elapsed=8.1s
+epoch=1 step=1300/10128 loss=0.5391 acc=0.8034 elapsed=8.4s
+epoch=1 step=1350/10128 loss=0.5335 acc=0.8055 elapsed=8.7s
+epoch=1 step=1400/10128 loss=0.5280 acc=0.8080 elapsed=9.0s
+epoch=1 step=1450/10128 loss=0.5232 acc=0.8096 elapsed=9.3s
+epoch=1 step=1500/10128 loss=0.5178 acc=0.8118 elapsed=9.7s
+epoch=1 step=1550/10128 loss=0.5130 acc=0.8136 elapsed=10.0s
+epoch=1 step=1600/10128 loss=0.5092 acc=0.8151 elapsed=10.3s
+epoch=1 step=1650/10128 loss=0.5056 acc=0.8166 elapsed=10.6s
+{"epoch": 1, "step": 1688, "train_loss": 0.5025164508907883, "train_accuracy": 0.8178981481481481, "validation_loss": 0.367345764319102, "validation_accuracy": 0.87275, "validation_macro_f1": 0.8732136981661061, "elapsed_seconds": 12.668960797134787}
+保存新的最佳 checkpoint（epoch=1, val_acc=0.8728）
+epoch=2 step=1700/10128 loss=0.3952 acc=0.8555 elapsed=12.8s
+epoch=2 step=1750/10128 loss=0.3938 acc=0.8601 elapsed=13.1s
+epoch=2 step=1800/10128 loss=0.3904 acc=0.8616 elapsed=13.5s
+epoch=2 step=1850/10128 loss=0.3865 acc=0.8643 elapsed=13.8s
+epoch=2 step=1900/10128 loss=0.3868 acc=0.8636 elapsed=14.1s
+epoch=2 step=1950/10128 loss=0.3858 acc=0.8624 elapsed=14.4s
+epoch=2 step=2000/10128 loss=0.3876 acc=0.8617 elapsed=14.7s
+epoch=2 step=2050/10128 loss=0.3862 acc=0.8622 elapsed=15.0s
+epoch=2 step=2100/10128 loss=0.3853 acc=0.8629 elapsed=15.3s
+epoch=2 step=2150/10128 loss=0.3857 acc=0.8631 elapsed=15.6s
+epoch=2 step=2200/10128 loss=0.3852 acc=0.8635 elapsed=15.9s
+epoch=2 step=2250/10128 loss=0.3841 acc=0.8635 elapsed=16.2s
+epoch=2 step=2300/10128 loss=0.3860 acc=0.8631 elapsed=16.5s
+epoch=2 step=2350/10128 loss=0.3844 acc=0.8634 elapsed=16.8s
+epoch=2 step=2400/10128 loss=0.3832 acc=0.8636 elapsed=17.2s
+epoch=2 step=2450/10128 loss=0.3837 acc=0.8634 elapsed=17.5s
+epoch=2 step=2500/10128 loss=0.3827 acc=0.8640 elapsed=17.8s
+epoch=2 step=2550/10128 loss=0.3820 acc=0.8643 elapsed=18.1s
+epoch=2 step=2600/10128 loss=0.3818 acc=0.8641 elapsed=18.4s
+epoch=2 step=2650/10128 loss=0.3819 acc=0.8642 elapsed=18.7s
+epoch=2 step=2700/10128 loss=0.3812 acc=0.8646 elapsed=19.0s
+epoch=2 step=2750/10128 loss=0.3805 acc=0.8646 elapsed=19.3s
+epoch=2 step=2800/10128 loss=0.3800 acc=0.8649 elapsed=19.6s
+epoch=2 step=2850/10128 loss=0.3792 acc=0.8651 elapsed=19.9s
+epoch=2 step=2900/10128 loss=0.3794 acc=0.8652 elapsed=20.3s
+epoch=2 step=2950/10128 loss=0.3790 acc=0.8651 elapsed=20.6s
+epoch=2 step=3000/10128 loss=0.3792 acc=0.8654 elapsed=20.9s
+epoch=2 step=3050/10128 loss=0.3797 acc=0.8652 elapsed=21.2s
+epoch=2 step=3100/10128 loss=0.3793 acc=0.8655 elapsed=21.5s
+epoch=2 step=3150/10128 loss=0.3791 acc=0.8655 elapsed=21.8s
+epoch=2 step=3200/10128 loss=0.3785 acc=0.8658 elapsed=22.1s
+epoch=2 step=3250/10128 loss=0.3786 acc=0.8658 elapsed=22.4s
+epoch=2 step=3300/10128 loss=0.3787 acc=0.8660 elapsed=22.7s
+epoch=2 step=3350/10128 loss=0.3785 acc=0.8662 elapsed=23.0s
+{"epoch": 2, "step": 3376, "train_loss": 0.3781208095373931, "train_accuracy": 0.8662777777777778, "validation_loss": 0.3574017663796743, "validation_accuracy": 0.876, "validation_macro_f1": 0.8756983534236673, "elapsed_seconds": 24.22500412305817}
+保存新的最佳 checkpoint（epoch=2, val_acc=0.8760）
+epoch=3 step=3400/10128 loss=0.3878 acc=0.8665 elapsed=24.6s
+epoch=3 step=3450/10128 loss=0.3887 acc=0.8668 elapsed=24.9s
+epoch=3 step=3500/10128 loss=0.3879 acc=0.8667 elapsed=25.2s
+epoch=3 step=3550/10128 loss=0.3753 acc=0.8686 elapsed=25.5s
+epoch=3 step=3600/10128 loss=0.3688 acc=0.8700 elapsed=25.8s
+epoch=3 step=3650/10128 loss=0.3707 acc=0.8698 elapsed=26.1s
+epoch=3 step=3700/10128 loss=0.3710 acc=0.8688 elapsed=26.4s
+epoch=3 step=3750/10128 loss=0.3719 acc=0.8690 elapsed=26.7s
+epoch=3 step=3800/10128 loss=0.3714 acc=0.8696 elapsed=27.1s
+epoch=3 step=3850/10128 loss=0.3738 acc=0.8683 elapsed=27.4s
+epoch=3 step=3900/10128 loss=0.3752 acc=0.8682 elapsed=27.7s
+epoch=3 step=3950/10128 loss=0.3764 acc=0.8673 elapsed=28.0s
+epoch=3 step=4000/10128 loss=0.3778 acc=0.8671 elapsed=28.3s
+epoch=3 step=4050/10128 loss=0.3781 acc=0.8672 elapsed=28.6s
+epoch=3 step=4100/10128 loss=0.3779 acc=0.8667 elapsed=28.9s
+epoch=3 step=4150/10128 loss=0.3783 acc=0.8668 elapsed=29.2s
+epoch=3 step=4200/10128 loss=0.3785 acc=0.8667 elapsed=29.5s
+epoch=3 step=4250/10128 loss=0.3790 acc=0.8665 elapsed=29.8s
+epoch=3 step=4300/10128 loss=0.3794 acc=0.8663 elapsed=30.1s
+epoch=3 step=4350/10128 loss=0.3793 acc=0.8660 elapsed=30.4s
+epoch=3 step=4400/10128 loss=0.3790 acc=0.8659 elapsed=30.8s
+epoch=3 step=4450/10128 loss=0.3801 acc=0.8655 elapsed=31.1s
+epoch=3 step=4500/10128 loss=0.3797 acc=0.8657 elapsed=31.4s
+epoch=3 step=4550/10128 loss=0.3801 acc=0.8657 elapsed=31.7s
+epoch=3 step=4600/10128 loss=0.3796 acc=0.8661 elapsed=32.0s
+epoch=3 step=4650/10128 loss=0.3785 acc=0.8664 elapsed=32.3s
+epoch=3 step=4700/10128 loss=0.3782 acc=0.8669 elapsed=32.6s
+epoch=3 step=4750/10128 loss=0.3778 acc=0.8669 elapsed=32.9s
+epoch=3 step=4800/10128 loss=0.3766 acc=0.8673 elapsed=33.2s
+epoch=3 step=4850/10128 loss=0.3767 acc=0.8673 elapsed=33.6s
+epoch=3 step=4900/10128 loss=0.3763 acc=0.8672 elapsed=33.9s
+epoch=3 step=4950/10128 loss=0.3759 acc=0.8674 elapsed=34.2s
+epoch=3 step=5000/10128 loss=0.3760 acc=0.8674 elapsed=34.5s
+epoch=3 step=5050/10128 loss=0.3753 acc=0.8677 elapsed=34.8s
+{"epoch": 3, "step": 5064, "train_loss": 0.3751173377831777, "train_accuracy": 0.8676759259259259, "validation_loss": 0.3526526414553324, "validation_accuracy": 0.878, "validation_macro_f1": 0.8780067916028741, "elapsed_seconds": 35.895559119060636}
+保存新的最佳 checkpoint（epoch=3, val_acc=0.8780）
+epoch=4 step=5100/10128 loss=0.3731 acc=0.8698 elapsed=36.4s
+epoch=4 step=5150/10128 loss=0.3589 acc=0.8699 elapsed=36.7s
+epoch=4 step=5200/10128 loss=0.3588 acc=0.8718 elapsed=37.0s
+epoch=4 step=5250/10128 loss=0.3627 acc=0.8717 elapsed=37.3s
+epoch=4 step=5300/10128 loss=0.3691 acc=0.8689 elapsed=37.6s
+epoch=4 step=5350/10128 loss=0.3726 acc=0.8665 elapsed=37.9s
+epoch=4 step=5400/10128 loss=0.3745 acc=0.8651 elapsed=38.2s
+epoch=4 step=5450/10128 loss=0.3741 acc=0.8652 elapsed=38.5s
+epoch=4 step=5500/10128 loss=0.3708 acc=0.8668 elapsed=38.9s
+epoch=4 step=5550/10128 loss=0.3727 acc=0.8661 elapsed=39.2s
+epoch=4 step=5600/10128 loss=0.3733 acc=0.8665 elapsed=39.5s
+epoch=4 step=5650/10128 loss=0.3734 acc=0.8666 elapsed=39.8s
+epoch=4 step=5700/10128 loss=0.3751 acc=0.8664 elapsed=40.1s
+epoch=4 step=5750/10128 loss=0.3741 acc=0.8668 elapsed=40.4s
+epoch=4 step=5800/10128 loss=0.3741 acc=0.8663 elapsed=40.7s
+epoch=4 step=5850/10128 loss=0.3740 acc=0.8665 elapsed=41.0s
+epoch=4 step=5900/10128 loss=0.3731 acc=0.8672 elapsed=41.3s
+epoch=4 step=5950/10128 loss=0.3711 acc=0.8680 elapsed=41.6s
+epoch=4 step=6000/10128 loss=0.3717 acc=0.8678 elapsed=41.9s
+epoch=4 step=6050/10128 loss=0.3725 acc=0.8679 elapsed=42.2s
+epoch=4 step=6100/10128 loss=0.3723 acc=0.8681 elapsed=42.6s
+epoch=4 step=6150/10128 loss=0.3715 acc=0.8685 elapsed=42.9s
+epoch=4 step=6200/10128 loss=0.3719 acc=0.8682 elapsed=43.2s
+epoch=4 step=6250/10128 loss=0.3722 acc=0.8681 elapsed=43.5s
+epoch=4 step=6300/10128 loss=0.3725 acc=0.8682 elapsed=43.8s
+epoch=4 step=6350/10128 loss=0.3727 acc=0.8680 elapsed=44.1s
+epoch=4 step=6400/10128 loss=0.3727 acc=0.8679 elapsed=44.4s
+epoch=4 step=6450/10128 loss=0.3725 acc=0.8682 elapsed=44.7s
+epoch=4 step=6500/10128 loss=0.3723 acc=0.8685 elapsed=45.0s
+epoch=4 step=6550/10128 loss=0.3729 acc=0.8682 elapsed=45.3s
+epoch=4 step=6600/10128 loss=0.3725 acc=0.8684 elapsed=45.6s
+epoch=4 step=6650/10128 loss=0.3728 acc=0.8683 elapsed=46.0s
+epoch=4 step=6700/10128 loss=0.3730 acc=0.8682 elapsed=46.3s
+epoch=4 step=6750/10128 loss=0.3726 acc=0.8682 elapsed=46.6s
+{"epoch": 4, "step": 6752, "train_loss": 0.3725401490352772, "train_accuracy": 0.8681851851851852, "validation_loss": 0.3500648246606191, "validation_accuracy": 0.8785, "validation_macro_f1": 0.8785362106761545, "elapsed_seconds": 47.60675188526511}
+保存新的最佳 checkpoint（epoch=4, val_acc=0.8785）
+epoch=5 step=6800/10128 loss=0.3600 acc=0.8727 elapsed=48.2s
+epoch=5 step=6850/10128 loss=0.3633 acc=0.8737 elapsed=48.5s
+epoch=5 step=6900/10128 loss=0.3545 acc=0.8736 elapsed=48.8s
+epoch=5 step=6950/10128 loss=0.3582 acc=0.8715 elapsed=49.1s
+epoch=5 step=7000/10128 loss=0.3576 acc=0.8725 elapsed=49.5s
+epoch=5 step=7050/10128 loss=0.3637 acc=0.8701 elapsed=49.8s
+epoch=5 step=7100/10128 loss=0.3606 acc=0.8714 elapsed=50.1s
+epoch=5 step=7150/10128 loss=0.3628 acc=0.8707 elapsed=50.4s
+epoch=5 step=7200/10128 loss=0.3662 acc=0.8702 elapsed=50.7s
+epoch=5 step=7250/10128 loss=0.3690 acc=0.8694 elapsed=51.0s
+epoch=5 step=7300/10128 loss=0.3701 acc=0.8690 elapsed=51.3s
+epoch=5 step=7350/10128 loss=0.3699 acc=0.8687 elapsed=51.6s
+epoch=5 step=7400/10128 loss=0.3706 acc=0.8687 elapsed=51.9s
+epoch=5 step=7450/10128 loss=0.3716 acc=0.8685 elapsed=52.2s
+epoch=5 step=7500/10128 loss=0.3716 acc=0.8686 elapsed=52.5s
+epoch=5 step=7550/10128 loss=0.3726 acc=0.8682 elapsed=52.8s
+epoch=5 step=7600/10128 loss=0.3733 acc=0.8678 elapsed=53.1s
+epoch=5 step=7650/10128 loss=0.3727 acc=0.8677 elapsed=53.4s
+epoch=5 step=7700/10128 loss=0.3727 acc=0.8678 elapsed=53.7s
+epoch=5 step=7750/10128 loss=0.3722 acc=0.8676 elapsed=54.0s
+epoch=5 step=7800/10128 loss=0.3722 acc=0.8676 elapsed=54.4s
+epoch=5 step=7850/10128 loss=0.3717 acc=0.8677 elapsed=54.7s
+epoch=5 step=7900/10128 loss=0.3712 acc=0.8679 elapsed=55.0s
+epoch=5 step=7950/10128 loss=0.3713 acc=0.8680 elapsed=55.3s
+epoch=5 step=8000/10128 loss=0.3717 acc=0.8678 elapsed=55.6s
+epoch=5 step=8050/10128 loss=0.3714 acc=0.8680 elapsed=55.9s
+epoch=5 step=8100/10128 loss=0.3720 acc=0.8680 elapsed=56.2s
+epoch=5 step=8150/10128 loss=0.3713 acc=0.8680 elapsed=56.6s
+epoch=5 step=8200/10128 loss=0.3709 acc=0.8681 elapsed=56.9s
+epoch=5 step=8250/10128 loss=0.3707 acc=0.8682 elapsed=57.2s
+epoch=5 step=8300/10128 loss=0.3707 acc=0.8682 elapsed=57.5s
+epoch=5 step=8350/10128 loss=0.3703 acc=0.8684 elapsed=57.8s
+epoch=5 step=8400/10128 loss=0.3700 acc=0.8684 elapsed=58.1s
+{"epoch": 5, "step": 8440, "train_loss": 0.3699293088118235, "train_accuracy": 0.8683518518518518, "validation_loss": 0.34979169034957885, "validation_accuracy": 0.87925, "validation_macro_f1": 0.8791854346348305, "elapsed_seconds": 59.39141405420378}
+保存新的最佳 checkpoint（epoch=5, val_acc=0.8792）
+epoch=6 step=8450/10128 loss=0.3362 acc=0.8844 elapsed=59.7s
+epoch=6 step=8500/10128 loss=0.3857 acc=0.8654 elapsed=60.0s
+epoch=6 step=8550/10128 loss=0.3669 acc=0.8712 elapsed=60.3s
+epoch=6 step=8600/10128 loss=0.3670 acc=0.8689 elapsed=60.7s
+epoch=6 step=8650/10128 loss=0.3629 acc=0.8701 elapsed=61.0s
+epoch=6 step=8700/10128 loss=0.3648 acc=0.8696 elapsed=61.3s
+epoch=6 step=8750/10128 loss=0.3670 acc=0.8694 elapsed=61.6s
+epoch=6 step=8800/10128 loss=0.3683 acc=0.8680 elapsed=61.9s
+epoch=6 step=8850/10128 loss=0.3668 acc=0.8686 elapsed=62.2s
+epoch=6 step=8900/10128 loss=0.3672 acc=0.8683 elapsed=62.6s
+epoch=6 step=8950/10128 loss=0.3671 acc=0.8688 elapsed=62.9s
+epoch=6 step=9000/10128 loss=0.3676 acc=0.8692 elapsed=63.2s
+epoch=6 step=9050/10128 loss=0.3665 acc=0.8702 elapsed=63.5s
+epoch=6 step=9100/10128 loss=0.3672 acc=0.8699 elapsed=63.9s
+epoch=6 step=9150/10128 loss=0.3681 acc=0.8696 elapsed=64.2s
+epoch=6 step=9200/10128 loss=0.3686 acc=0.8698 elapsed=64.5s
+epoch=6 step=9250/10128 loss=0.3685 acc=0.8698 elapsed=64.8s
+epoch=6 step=9300/10128 loss=0.3684 acc=0.8701 elapsed=65.1s
+epoch=6 step=9350/10128 loss=0.3680 acc=0.8700 elapsed=65.4s
+epoch=6 step=9400/10128 loss=0.3667 acc=0.8704 elapsed=65.7s
+epoch=6 step=9450/10128 loss=0.3671 acc=0.8704 elapsed=66.0s
+epoch=6 step=9500/10128 loss=0.3661 acc=0.8707 elapsed=66.3s
+epoch=6 step=9550/10128 loss=0.3656 acc=0.8708 elapsed=66.6s
+epoch=6 step=9600/10128 loss=0.3651 acc=0.8711 elapsed=67.0s
+epoch=6 step=9650/10128 loss=0.3657 acc=0.8708 elapsed=67.3s
+epoch=6 step=9700/10128 loss=0.3665 acc=0.8703 elapsed=67.6s
+epoch=6 step=9750/10128 loss=0.3666 acc=0.8703 elapsed=67.9s
+epoch=6 step=9800/10128 loss=0.3669 acc=0.8699 elapsed=68.2s
+epoch=6 step=9850/10128 loss=0.3672 acc=0.8698 elapsed=68.5s
+epoch=6 step=9900/10128 loss=0.3668 acc=0.8701 elapsed=68.8s
+epoch=6 step=9950/10128 loss=0.3670 acc=0.8699 elapsed=69.1s
+epoch=6 step=10000/10128 loss=0.3671 acc=0.8698 elapsed=69.4s
+epoch=6 step=10050/10128 loss=0.3669 acc=0.8699 elapsed=69.7s
+epoch=6 step=10100/10128 loss=0.3671 acc=0.8699 elapsed=70.1s
+epoch=6 step=10128/10128 loss=0.3669 acc=0.8699 elapsed=70.2s
+{"epoch": 6, "step": 10128, "train_loss": 0.3669273953791018, "train_accuracy": 0.8699351851851852, "validation_loss": 0.34906702264149986, "validation_accuracy": 0.8795, "validation_macro_f1": 0.8794225263896626, "elapsed_seconds": 71.26669488614425}
+保存新的最佳 checkpoint（epoch=6, val_acc=0.8795）
+{
+  "mode": "frozen",
+  "parameters": {
+    "total": 10889732,
+    "trainable": 1028,
+    "frozen": 10888704,
+    "backbone": 10888704,
+    "classification_head": 1028,
+    "trainable_fraction": 9.440085394204375e-05,
+    "tensors": 54
+  },
+  "best_epoch": 6,
+  "best_validation": {
+    "accuracy": 0.8795
+  },
+  "test": {
+    "accuracy": 0.8802631578947369,
+    "macro_f1": 0.8802010002476324,
+    "loss": 0.3554555336425179
+  },
+  "training_seconds": 71.55591786792502,
+  "inference_seconds": 0.6177753079682589
+}

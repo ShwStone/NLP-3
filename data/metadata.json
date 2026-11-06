@@ -1,0 +1,102 @@
+{
+  "dataset": "AG News",
+  "source": "Zhang, Zhao & LeCun (2015), via CharCnn_Keras CSV mirror",
+  "train_url": "https://raw.githubusercontent.com/mhjabreel/CharCnn_Keras/master/data/ag_news_csv/train.csv",
+  "test_url": "https://raw.githubusercontent.com/mhjabreel/CharCnn_Keras/master/data/ag_news_csv/test.csv",
+  "train_csv_sha256": "76a0a2d2f92b286371fe4d4044640910a04a803fdd2538e0f3f29a5c6f6b672e",
+  "test_csv_sha256": "521465c2428ed7f02f8d6db6ffdd4b5447c1c701962353eb2c40d548c3c85699",
+  "train_csv_bytes": 29470338,
+  "test_csv_bytes": 1857427,
+  "labels": [
+    "World",
+    "Sports",
+    "Business",
+    "Sci/Tech"
+  ],
+  "num_classes": 4,
+  "official_train_examples": 120000,
+  "validation_fraction": 0.1,
+  "split_seed": 42,
+  "split": "official train stratified 90%/10% into train/validation; official test untouched",
+  "counts": {
+    "train": 108000,
+    "validation": 12000,
+    "test": 7600
+  },
+  "class_distribution": {
+    "train": {
+      "World": 27000,
+      "Sports": 27000,
+      "Business": 27000,
+      "Sci/Tech": 27000
+    },
+    "validation": {
+      "World": 3000,
+      "Sports": 3000,
+      "Business": 3000,
+      "Sci/Tech": 3000
+    },
+    "test": {
+      "World": 1900,
+      "Sports": 1900,
+      "Business": 1900,
+      "Sci/Tech": 1900
+    }
+  },
+  "text_construction": "title + '. ' + description",
+  "tokenizer": {
+    "type": "word-level, lowercased regex, training-only vocabulary",
+    "min_freq": 2,
+    "max_vocab": 30000,
+    "vocab_size": 30000,
+    "pad_id": 0,
+    "unk_id": 1,
+    "bos_id": 2,
+    "eos_id": 3,
+    "extra_tokens": [
+      "business",
+      "computers",
+      "description",
+      "financial",
+      "politics",
+      "science",
+      "sports",
+      "title",
+      "topic",
+      "world"
+    ]
+  },
+  "token_lengths": {
+    "train": {
+      "count": 108000,
+      "mean_tokens": 47.83,
+      "median_tokens": 46.0,
+      "p90_tokens": 63,
+      "p99_tokens": 108,
+      "max_tokens": 314,
+      "truncated_fraction": 0.000657,
+      "max_length": 192
+    },
+    "validation": {
+      "count": 12000,
+      "mean_tokens": 48.17,
+      "median_tokens": 46.0,
+      "p90_tokens": 63,
+      "p99_tokens": 110,
+      "max_tokens": 294,
+      "truncated_fraction": 0.001417,
+      "max_length": 192
+    },
+    "test": {
+      "count": 7600,
+      "mean_tokens": 47.43,
+      "median_tokens": 46.0,
+      "p90_tokens": 62,
+      "p99_tokens": 107,
+      "max_tokens": 222,
+      "truncated_fraction": 0.000526,
+      "max_length": 192
+    }
+  },
+  "max_length_for_classification": 192
+}

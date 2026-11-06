@@ -1,0 +1,32 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# LaTeX build products
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/build_pass_*.log
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Generated preview material
+report/preview/
+
+# Local submission archives
+*.zip
+
+# AG News 原始 CSV 可由 src/data.py 重新下载；不纳入代码仓库
+data/*.csv
+
+# 训练权重较大，可复现实验生成；保留指标、日志与报告
+results/**/*.pt
+results/*.pt

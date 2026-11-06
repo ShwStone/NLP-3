@@ -1,0 +1,221 @@
+{
+  "mode": "scratch",
+  "model_config": {
+    "vocab_size": 30000,
+    "context_length": 192,
+    "n_layers": 4,
+    "d_model": 256,
+    "n_heads": 4,
+    "dropout": 0.1
+  },
+  "parameters": {
+    "total": 10889732,
+    "trainable": 10889732,
+    "frozen": 0,
+    "backbone": 10888704,
+    "classification_head": 1028,
+    "trainable_fraction": 1.0,
+    "tensors": 54
+  },
+  "settings": {
+    "mode": "scratch",
+    "epochs": 3,
+    "batch_size": 64,
+    "lr_backbone": 0.0002,
+    "lr_head": 0.001,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "gradient_clip": 1.0,
+    "max_length": 192,
+    "pooling": "last",
+    "head_dropout": 0.1,
+    "seed": 42,
+    "steps_per_epoch": 1688,
+    "total_steps": 5064,
+    "warmup_steps": 506,
+    "checkpoint_selection": "best validation accuracy; ties -> lower validation loss",
+    "precision": "BF16 autocast; FP32 parameters/optimizer",
+    "lm_checkpoint": "/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt",
+    "lm_checkpoint_step": null,
+    "train_examples": 108000,
+    "validation_examples": 12000,
+    "test_examples": 7600
+  },
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T18:25:27.461052+08:00"
+  },
+  "data": {
+    "counts": {
+      "train": 108000,
+      "validation": 12000,
+      "test": 7600
+    },
+    "train_csv_sha256": "76a0a2d2f92b286371fe4d4044640910a04a803fdd2538e0f3f29a5c6f6b672e",
+    "test_csv_sha256": "521465c2428ed7f02f8d6db6ffdd4b5447c1c701962353eb2c40d548c3c85699",
+    "max_length": 192
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "step": 1688,
+      "train_loss": 0.4411581167291712,
+      "train_accuracy": 0.8354814814814815,
+      "validation_loss": 0.27296661376953124,
+      "validation_accuracy": 0.9069166666666667,
+      "validation_macro_f1": 0.9073276613929289,
+      "elapsed_seconds": 32.08629799261689
+    },
+    {
+      "epoch": 2,
+      "step": 3376,
+      "train_loss": 0.22106004068586563,
+      "train_accuracy": 0.9273611111111111,
+      "validation_loss": 0.23958678118387858,
+      "validation_accuracy": 0.92175,
+      "validation_macro_f1": 0.9215377935903757,
+      "elapsed_seconds": 63.13388829678297
+    },
+    {
+      "epoch": 3,
+      "step": 5064,
+      "train_loss": 0.17658821067103633,
+      "train_accuracy": 0.9414259259259259,
+      "validation_loss": 0.24992034244537353,
+      "validation_accuracy": 0.9225,
+      "validation_macro_f1": 0.9223269758536665,
+      "elapsed_seconds": 94.16159702464938
+    }
+  ],
+  "best_epoch": 3,
+  "best_validation": {
+    "num_examples": 12000,
+    "accuracy": 0.9225,
+    "macro_f1": 0.9223269758536665,
+    "per_class": {
+      "World": {
+        "precision": 0.9387755102040817,
+        "recall": 0.9046666666666666,
+        "f1": 0.9214055338652182,
+        "support": 3000
+      },
+      "Sports": {
+        "precision": 0.9530440414507773,
+        "recall": 0.981,
+        "f1": 0.966819973718791,
+        "support": 3000
+      },
+      "Business": {
+        "precision": 0.9116534891715367,
+        "recall": 0.884,
+        "f1": 0.8976138094432222,
+        "support": 3000
+      },
+      "Sci/Tech": {
+        "precision": 0.8872107969151671,
+        "recall": 0.9203333333333333,
+        "f1": 0.9034685863874345,
+        "support": 3000
+      }
+    },
+    "confusion_matrix": [
+      [
+        2714,
+        82,
+        105,
+        99
+      ],
+      [
+        16,
+        2943,
+        21,
+        20
+      ],
+      [
+        85,
+        31,
+        2652,
+        232
+      ],
+      [
+        76,
+        32,
+        131,
+        2761
+      ]
+    ]
+  },
+  "best_validation_loss": 0.24992034244537353,
+  "test": {
+    "num_examples": 7600,
+    "accuracy": 0.9185526315789474,
+    "macro_f1": 0.918278442354598,
+    "per_class": {
+      "World": {
+        "precision": 0.9275439531166756,
+        "recall": 0.9163157894736842,
+        "f1": 0.9218956844056129,
+        "support": 1900
+      },
+      "Sports": {
+        "precision": 0.9484956654767975,
+        "recall": 0.9789473684210527,
+        "f1": 0.9634809634809635,
+        "support": 1900
+      },
+      "Business": {
+        "precision": 0.9030501089324618,
+        "recall": 0.8726315789473684,
+        "f1": 0.8875802997858673,
+        "support": 1900
+      },
+      "Sci/Tech": {
+        "precision": 0.8940809968847352,
+        "recall": 0.9063157894736842,
+        "f1": 0.9001568217459488,
+        "support": 1900
+      }
+    },
+    "confusion_matrix": [
+      [
+        1741,
+        53,
+        63,
+        43
+      ],
+      [
+        12,
+        1860,
+        16,
+        12
+      ],
+      [
+        69,
+        24,
+        1658,
+        149
+      ],
+      [
+        55,
+        24,
+        99,
+        1722
+      ]
+    ],
+    "loss": 0.25764045291825344
+  },
+  "training_wall_seconds": 94.34318459685892,
+  "inference_wall_seconds": 0.6233855523169041,
+  "test_examples_per_second": 12191.492041728401,
+  "peak_cuda_allocated_bytes": 1257810432,
+  "checkpoint": "/data/shwstone/Workspace/NLP-3/assignment3/results/classifier_scratch/best.pt",
+  "checkpoint_sha256": "125fc83fcf2f3addde55d9efac9ab7b49de6c440d6322a60d6d55c06e759b27c"
+}

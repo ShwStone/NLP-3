@@ -1,0 +1,15 @@
+{
+  "all_required_files_exist": true,
+  "missing_files": [],
+  "verification_passed": true,
+  "tests_passed": true,
+  "report_pdf_nonempty": true,
+  "report_copy_nonempty": true,
+  "report_tex_no_todo": true,
+  "values_generated": true,
+  "json_finite": true,
+  "source_no_todo": true,
+  "comparison_csv_rows": true,
+  "report_has_pages": true,
+  "all_passed": true
+}

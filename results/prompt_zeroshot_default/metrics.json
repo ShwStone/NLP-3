@@ -1,0 +1,121 @@
+{
+  "model": "prompt scoring with frozen decoder LM",
+  "shots_per_class": 0,
+  "num_exemplars": 0,
+  "verbalizers": {
+    "World": "world",
+    "Sports": "sports",
+    "Business": "business",
+    "Sci/Tech": "science"
+  },
+  "verbalizer_preset": "default",
+  "calibrated": false,
+  "calibration_scores": null,
+  "template": "title: {title} description: {description} topic: {verbalizer}<eos>",
+  "scoring": "mean log P(verbalizer tokens, <eos> | prompt); no training",
+  "trainable_parameters": 0,
+  "context_length": 192,
+  "prompt_max_length": 192,
+  "label_ids": [
+    [
+      69
+    ],
+    [
+      291
+    ],
+    [
+      160
+    ],
+    [
+      1340
+    ]
+  ],
+  "exemplars": {
+    "World": [],
+    "Sports": [],
+    "Business": [],
+    "Sci/Tech": []
+  },
+  "test": {
+    "num_examples": 7600,
+    "accuracy": 0.48605263157894735,
+    "macro_f1": 0.462164014980095,
+    "per_class": {
+      "World": {
+        "precision": 0.5147058823529411,
+        "recall": 0.4052631578947368,
+        "f1": 0.4534746760895171,
+        "support": 1900
+      },
+      "Sports": {
+        "precision": 0.7614991482112436,
+        "recall": 0.4705263157894737,
+        "f1": 0.5816525699414443,
+        "support": 1900
+      },
+      "Business": {
+        "precision": 0.3952291861552853,
+        "recall": 0.8894736842105263,
+        "f1": 0.5472797927461139,
+        "support": 1900
+      },
+      "Sci/Tech": {
+        "precision": 0.5198776758409785,
+        "recall": 0.17894736842105263,
+        "f1": 0.2662490211433046,
+        "support": 1900
+      }
+    },
+    "confusion_matrix": [
+      [
+        770,
+        248,
+        640,
+        242
+      ],
+      [
+        502,
+        894,
+        484,
+        20
+      ],
+      [
+        146,
+        12,
+        1690,
+        52
+      ],
+      [
+        78,
+        20,
+        1462,
+        340
+      ]
+    ]
+  },
+  "inference_seconds": 3.3840443333610892,
+  "test_examples_per_second": 2245.833461777244,
+  "environment": {
+    "python": "3.12.9",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.4",
+    "cuda_runtime": "12.4",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "platform": "Linux-7.1.13-2-MANJARO-x86_64-with-glibc2.44",
+    "deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "measured_at_beijing": "2026-11-06T18:27:31.846347+08:00"
+  },
+  "data": {
+    "counts": {
+      "train": 108000,
+      "validation": 12000,
+      "test": 7600
+    },
+    "train_csv_sha256": "76a0a2d2f92b286371fe4d4044640910a04a803fdd2538e0f3f29a5c6f6b672e",
+    "test_csv_sha256": "521465c2428ed7f02f8d6db6ffdd4b5447c1c701962353eb2c40d548c3c85699"
+  },
+  "lm_checkpoint": "/data/shwstone/Workspace/NLP-3/assignment3/results/lm_pretrained_best.pt",
+  "lm_checkpoint_step": 2000
+}
