@@ -1,9 +1,9 @@
 {
   "archive": "编程作业三_完整提交包.zip",
-  "size_bytes": 2612494,
-  "size_mib": 2.4914684295654297,
+  "size_bytes": 2579116,
+  "size_mib": 2.459636688232422,
   "file_count": 96,
-  "sha256": "ffa138ef82a1a1b06a454f1ed379212e220b7e19e78d7f1dc3f9fb449c54ef97",
+  "sha256": "0ea00e54cba3120d2e7d9c01c6c1670680b4a022304cc6a922bd62dd71fe97b7",
   "excluded": [
     "data/*.csv",
     "results/**/*.pt"
